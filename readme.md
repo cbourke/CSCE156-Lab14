@@ -71,9 +71,13 @@ A *stack* is a LIFO (Last-In First-Out) data structure.  The two basic
 operations are *push*: adding an element to the "top" of the stack and
 *pop*: removing the element at the top of the stack.  Stacks, like many 
 data structures, can be implemented using other data structures.  
-In this lab, your stack implementation will utilize Java's `LinkedList` 
-data structure.  You will use the linked list's methods to implement
-the push, pop and other operations.  You will then use your stack
+In this lab, your stack implementation will utilize Java's `Deque` 
+data structure.  You will use the deque's methods to implement
+the push, pop and other operations.  For documentation, see 
+
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Deque.html
+
+You will then use your stack
 implementation to solve a problem involving *postfix notation*.
 
 Postfix notation (also known as Reverse Polish Notation) is a
@@ -121,7 +125,7 @@ a postfix expression.  Much of the code to read in the expression
 has been provided as well as some helper methods that you can use.
 
 1.  Implement the four methods in the `Stack` class (which uses a
-    `LinkedList` class).
+    `Deque` instance).
 
 2.  You should test your implementation by creating a small `main()`
     method and push/pop elements off your stack to see if you get 
@@ -151,7 +155,7 @@ the number of characters per line so that it is more human-user
 friendly.  
 
 1.  Implement the four methods in the `Queue` class in terms of
-    the `LinkedList`'s methods
+    the `Deque`'s methods
 
 2.  As before, you should test your implementation by creating a small
     `main()` method and enqueue/dequeue elements from your to see if you get the
@@ -219,16 +223,10 @@ errors and completely debug your programs.
 
 ## Advanced Activity (optional)
 
-1. Java provides a `Deque` or *double ended queue* interface.  A deque 
-   can be used for *either* LIFO or FIFO ordering.  Read the documentation:
-   <https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/Deque.html>
-   and change all of your code to use Java's `Deque` instead of your
-   `Stack` or `Queue` classes.
-
-2.  Add support to your JSON validator program to aslo check that
-    double-quote characters (used to denote strings) are well balanced.
-    Note that inside a string square and curly brackets need *not* be
-    balanced (and should be ignored). Moreover, double quotes may appear
-    inside of strings as long as they are escaped: `\"`
+Add support to your JSON validator program to also check that
+double-quote characters (used to denote strings) are well balanced.
+Note that inside a string square and curly brackets need *not* be
+balanced (and should be ignored). Moreover, double quotes may appear
+inside of strings as long as they are escaped: `\"`
 
 

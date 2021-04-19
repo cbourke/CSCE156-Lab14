@@ -1,10 +1,11 @@
 package unl.cse;
 
+import java.util.Deque;
 import java.util.LinkedList;
 
 public class Stack<T> {
 
-	private final LinkedList<T> list = new LinkedList<T>();
+	private final Deque<T> list = new LinkedList<T>();
 	
 	public T pop() {
 		//TODO: implement this method
