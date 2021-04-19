@@ -16,7 +16,7 @@ public class StackTests {
      * Setup a {@link Stack} object for use in each test method
      */
     @BeforeEach
-    void stackSetup() {
+    public void stackSetup() {
         testStack = new Stack<>();
     }
 
@@ -24,7 +24,7 @@ public class StackTests {
      * Test that the implementation of {@link Stack}'s methods function correctly
      */
     @Test
-    void stackTest() {
+    public void stackTest() {
         // isEmpty - returning true
         assertTrue(testStack.isEmpty(), "Stacks should start empty");
         assertEquals(0, testStack.size(), String.format("size() returned %d for a stack with %d elements", testStack.size(), 0));

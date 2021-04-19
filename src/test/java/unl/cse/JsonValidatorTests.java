@@ -11,7 +11,7 @@ public class JsonValidatorTests {
      * Test JSON for valid
      */
     @Test
-    void validatorTest() {
+    public void validatorTest() {
         //Valid tests
         assertTrue(JsonValidator.isValidJSON("{}"), "The brackets are balanced, making this a valid JSON string");
         assertTrue(JsonValidator.isValidJSON("[myFavoriteNumber: 42]"), "The brackets are balanced, making this a valid JSON string");

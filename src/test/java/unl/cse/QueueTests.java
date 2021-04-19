@@ -14,7 +14,7 @@ public class QueueTests {
      * Setup a {@link Queue} object for use in each test method
      */
     @BeforeEach
-    void queueSetup() {
+    public void queueSetup() {
         testQueue = new Queue<>();
     }
 
@@ -22,7 +22,7 @@ public class QueueTests {
      * Test that the implementation of {@link Queue}'s methods function correctly
      */
     @Test
-    void queueTest() {
+    public void queueTest() {
         // isEmpty - returning true
         assertTrue(testQueue.isEmpty(), "Queues should start off empty");
         assertEquals(0, testQueue.size(), String.format("size() returned %d for a queue with %d elements", testQueue.size(), 0));

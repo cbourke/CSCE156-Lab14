@@ -14,7 +14,7 @@ public class PostfixEvaluatorTests {
      * Setup a {@link PostfixEvaluator} object for use in each test method
      */
     @BeforeEach
-    void stackSetup() {
+    public void stackSetup() {
         postfixEvaluator = new PostfixEvaluator();
 
     }
@@ -23,7 +23,7 @@ public class PostfixEvaluatorTests {
      * Test {@link PostfixEvaluator#evaluateExpression(String)} returns the correct values
      */
     @Test
-    void evaluateTest() {
+    public void evaluateTest() {
         assertEquals(1, postfixEvaluator.evaluateExpression("1"), "A single number should return itself");
         assertEquals(5, postfixEvaluator.evaluateExpression("3 2 +"), "This should be interpreted as 3 + 2");
         assertEquals(1.5, postfixEvaluator.evaluateExpression("3 2 /"), "This should be interpreted as 3 / 2");

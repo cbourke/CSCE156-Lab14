@@ -11,7 +11,7 @@ public class AdvancedJsonValidatorTests {
      * Test the extra portion of the JSON validator
      */
     @Test
-    void quotationExtraTest(){
+    public void quotationExtraTest(){
         assertTrue(JsonValidator.isValidJSON("[\"\"]"), "The brackets and quotes are balanced, making this a valid JSON string");
         assertTrue(JsonValidator.isValidJSON("\"{\""), "The brackets and quotes are balanced, making this a valid JSON string");
         assertTrue(JsonValidator.isValidJSON("{\"\"}"), "The brackets and quotes are balanced, making this a valid JSON string");
