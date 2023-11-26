@@ -1,6 +1,8 @@
-package unl.cse;
+package unl.soc;
 
 import org.junit.jupiter.api.Test;
+
+import unl.soc.JsonValidator;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

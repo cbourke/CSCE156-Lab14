@@ -1,4 +1,4 @@
-package unl.cse;
+package unl.soc;
 
 import org.junit.platform.launcher.LauncherDiscoveryRequest;
 import org.junit.platform.launcher.listeners.SummaryGeneratingListener;

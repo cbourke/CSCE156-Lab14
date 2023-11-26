@@ -1,4 +1,4 @@
-package unl.cse;
+package unl.soc;
 
 import java.util.Arrays;
 import java.util.HashSet;
